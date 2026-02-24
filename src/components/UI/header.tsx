@@ -122,7 +122,7 @@ export default function Header() {
 
         <div
           style={{ height: `${layoutConfig.headerHeight}` }}
-          className={`h-[${layoutConfig.headerHeight}] navbarContent max-w-[1024px] md:justify-between md:flex md:w-full fixed top-0 right-0 md:left-0 mx-auto px-4 min-h-screen md:min-h-0 bg-gray-800 md:bg-transparent md:items-center w-64 shadow-lg transform transition-transform duration-300 ease-in-out ${
+          className={`h-[${layoutConfig.headerHeight}] navbarContent max-w-[1024px] md:justify-between md:flex md:w-full fixed top-0 right-0 md:left-0 mx-auto px-4 min-h-screen md:min-h-0 bg-gray-800 md:bg-transparent md:items-center w-64 shadow-lg transform transition-transform duration-300 ease-in-out opacity-97 ${
             isMobileMenuOpen
               ? "translate-x-0"
               : "translate-x-full md:translate-x-0"
