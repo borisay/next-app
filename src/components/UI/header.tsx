@@ -81,13 +81,14 @@ export default function Header() {
   };
 
   const pathName = usePathname();
-
   return (
     <div
       className={`header fixed top-0 left-0  w-full z-50 bg-default-800 h-[${layoutConfig.headerHeight}]`}
+      style={{ height: `${layoutConfig.headerHeight}` }}
     >
       <div
         className={`navbar flex items-center justify-between h-[${layoutConfig.headerHeight}]`}
+        style={{ height: `${layoutConfig.headerHeight}` }}
       >
         <div className="navbarMobile flex items-center justify-between w-full px-4">
           <div className="md:hidden navbarBrand flex gap-4">
@@ -120,6 +121,7 @@ export default function Header() {
         </div>
 
         <div
+          style={{ height: `${layoutConfig.headerHeight}` }}
           className={`h-[${layoutConfig.headerHeight}] navbarContent max-w-[1024px] md:justify-between md:flex md:w-full fixed top-0 right-0 md:left-0 mx-auto px-4 min-h-screen md:min-h-0 bg-gray-800 md:bg-transparent md:items-center w-64 shadow-lg transform transition-transform duration-300 ease-in-out ${
             isMobileMenuOpen
               ? "translate-x-0"
