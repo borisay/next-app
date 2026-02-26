@@ -93,7 +93,9 @@ export default function Header() {
         <div className="navbarMobile flex items-center justify-between w-full px-4">
           <div className="md:hidden navbarBrand flex gap-4">
             <Logo />
-            <p className="font-bold text-inherit">{siteConfig.title}</p>
+            <p className="font-bold text-inherit flex items-center">
+              {siteConfig.title}
+            </p>
           </div>
           <div className="navbarBurger md:hidden">
             <button
@@ -130,12 +132,19 @@ export default function Header() {
         >
           <div className="hidden md:navbarBrand md:flex md:gap-4">
             <Logo />
-            <p className="font-bold text-inherit">{siteConfig.title}</p>
+            <p className="font-bold text-inherit flex items-center">
+              {siteConfig.title}
+            </p>
           </div>
           <div className="navbarItems flex flex-col px-3 mt-[60px] md:mt-0 md:flex-row mb-10 md:mb-0 text-center gap-y-4 md:gap-x-6">
             {getNavItems()}
           </div>
           <div className="navbarLogin flex flex-col md:flex-row gap-y-4 md:gap-x-6">
+            {isAuth && (
+              <p className="hidden md:flex items-center">
+                Hi, {session?.user?.email}!
+              </p>
+            )}
             {status === "loading" ? (
               <p>"Loading..."</p>
             ) : !isAuth ? (

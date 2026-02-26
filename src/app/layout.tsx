@@ -46,6 +46,7 @@ export default async function RootLayout({
                 >
                   <main
                     className={`px-4 flex flex-col h-[calc(100vh-${layoutConfig.footerHeight}-${layoutConfig.headerHeight})] max-w-[1024px] items-center justify-self-center`}
+                    style={{ width: "100vw" }}
                   >
                     <Title />
                     {children}

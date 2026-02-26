@@ -19,7 +19,7 @@ const Home = () => {
       ) : null}
       {error && <p className="tex-red-500 mb-4">{error}</p>}
       {isLoading && <p>Loading...</p>}
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 w-full justify-items-center">
         {recipes.map((recipe) => (
           <RecipeCard key={recipe.id} recipe={recipe} />
         ))}
