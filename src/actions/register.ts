@@ -2,7 +2,7 @@
 
 import { IFormData } from "../types/form-data";
 import { saltAndHashPassword } from "../utils/password";
-import prisma from "../utils/prisma";
+import { prisma } from "../utils/prisma";
 
 export async function registerUser(formData: IFormData) {
   const { email, password, confirmPassword } = formData;
