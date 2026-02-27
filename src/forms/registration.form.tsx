@@ -2,7 +2,6 @@
 import { Form, Input, Modal } from "@heroui/react";
 import { useState } from "react";
 import { Button } from "@heroui/react";
-import { prisma } from "../utils/prisma";
 import { registerUser } from "../actions/register";
 
 interface IProps {
