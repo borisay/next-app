@@ -1,6 +1,6 @@
 "use server";
 import { success } from "zod";
-import { prisma } from "../utils/prisma";
+import prisma from "../utils/prisma";
 
 export async function getRecipes() {
   try {

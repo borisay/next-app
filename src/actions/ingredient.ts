@@ -2,7 +2,7 @@
 
 import { success, ZodError } from "zod";
 import { ingredientSchema } from "../schema/zod";
-import { prisma } from "../utils/prisma";
+import prisma from "../utils/prisma";
 
 export async function createIngredient(formData: FormData) {
   try {
