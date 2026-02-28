@@ -23,7 +23,7 @@ export const { handlers, signIn, signOut, auth } = NextAuth({
         try {
           // let user = null;
           if (!credentials?.email || !credentials?.password) {
-            throw new Error("Email and password are mandatory");
+            throw new Error("Email and password are necessarily");
           }
           const { email, password } =
             await signInSchema.parseAsync(credentials);

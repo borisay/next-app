@@ -52,7 +52,7 @@ const IngredientForm = () => {
         }}
         onChange={(e) => setFormData({ ...formData, name: e.target.value })}
         validate={(value) => {
-          if (!value) return "It is mandatary";
+          if (!value) return "Name is required";
           return null;
         }}
       />
@@ -132,7 +132,7 @@ const IngredientForm = () => {
               </span>
             }
             validate={(value) => {
-              // if (!value) return "It is mandatary";
+              // if (!value) return "It is required";
 
               const num = parseFloat(value);
               // if (isNaN(num) || num < 0) return "Price cannot be negative";

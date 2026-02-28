@@ -13,7 +13,7 @@ export const signInSchema = object({
 });
 
 export const ingredientSchema = object({
-  name: string().min(1, "Name is mandatory"),
+  name: string().min(1, "Name is required"),
   category: z.enum([
     "VEGETABLES",
     "FRUITS",
