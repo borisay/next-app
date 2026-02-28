@@ -27,7 +27,7 @@ export const prisma =
         : ["error"],
   }).$extends(withAccelerate());
 
-if (process.env.NODE_ENV !== "production") globalForPrisma.prisma = prisma;
+// if (process.env.NODE_ENV !== "production") globalForPrisma.prisma = prisma;
 
 // import { Pool } from "pg";
 // import { PrismaPg } from "@prisma/adapter-pg";
