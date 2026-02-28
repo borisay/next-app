@@ -84,7 +84,7 @@ const RecipeForm = ({ initialRecipe }: RecipeFormProps) => {
     });
   };
   return (
-    <Form className="w-[450px]" action={handleSubmit}>
+    <Form className="w-[310px] md:w-[450px]" action={handleSubmit}>
       <Input
         isRequired
         name="name"
